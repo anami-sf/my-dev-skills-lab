@@ -1,6 +1,6 @@
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
 	body {
-	  /* tablet - two column display */
+
 	  grid-template-columns: 2fr 2fr;
 	  grid-template-rows: 15vmin 80vmin 80vmin 15vmin;
 	  grid-template-areas: 
@@ -9,8 +9,8 @@
       "article3 article4"
 	    "ftr ftr";
 	}
-}
-  
+} */
+/*   
   header {
     grid-area: hdr;
     background-color: rgb(209, 59, 50);
@@ -39,14 +39,8 @@
   footer {
     grid-area: ftr;
     background-color: rgb(209, 59, 50);
-  }
+  } */
   
-  header, article, footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
 
 body {
     font-family: 'Courier New', Courier, monospace;
@@ -67,17 +61,37 @@ body {
 .container {
     box-sizing: border-box;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start; /* Along Axis*/
-    align-items: stretch; /* Cross Axis*/
+    flex-flow: column wrap;
+    justify-content: center; /* Along Axis*/
+    align-items: center; /* Cross Axis*/
     align-content: space-between;
+    text-align: center;
     /* flex-start, center, baseline */
 }
 
-#board {
-    display: grid;
-    grid-template-columns: repeat(7, 10vmin);
-    grid-template-rows: repeat(6, 10vmin);
+header {
+  background-color: rgb(153, 197, 112);
+  width: 100%;
+  color: white;
+}
+
+h1{
+  width: 100%;
+}
+
+UL {
+  margin: 50px;
+}
+
+#skill-text-box {
+  color: grey;
+  border: 2px solid rgb(153, 197, 112);
+}
+
+#add-skill-btn {
+  color: rgb(153, 197, 112);
+  background-color: white;
+  border: 2px solid rgb(153, 197, 112);
 }
 
 button:hover {
