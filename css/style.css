@@ -1,0 +1,87 @@
+@media only screen and (min-width: 768px) {
+	body {
+	  /* tablet - two column display */
+	  grid-template-columns: 2fr 2fr;
+	  grid-template-rows: 15vmin 80vmin 80vmin 15vmin;
+	  grid-template-areas: 
+	  "hdr hdr"
+      "article1 article2"
+      "article3 article4"
+	    "ftr ftr";
+	}
+}
+  
+  header {
+    grid-area: hdr;
+    background-color: rgb(209, 59, 50);
+  }
+  
+  #article1 {
+    grid-area: article1;
+    background-color: rgb(186 53 46);
+  }
+  
+  #article2 {
+    grid-area: article2;
+    background-color: rgb(197, 55, 47);
+  }
+
+  #article3 {
+    grid-area: article3;
+    background-color: rgb( 175, 50, 42);
+  }
+
+  #article4 {
+    grid-area: article4;
+    background-color: rgb(186 53 46);
+  }
+
+  footer {
+    grid-area: ftr;
+    background-color: rgb(209, 59, 50);
+  }
+  
+  header, article, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    /* view height */
+    height: 100vh;
+}
+
+/* div:last-child {
+    margin: 0;
+} */
+
+.clearfix:after {
+    display: block;
+    clear: both;
+    content: "";   
+}
+
+.container {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start; /* Along Axis*/
+    align-items: stretch; /* Cross Axis*/
+    align-content: space-between;
+    /* flex-start, center, baseline */
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(7, 10vmin);
+    grid-template-rows: repeat(6, 10vmin);
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
