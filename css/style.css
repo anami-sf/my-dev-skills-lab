@@ -1,46 +1,29 @@
-/* @media only screen and (min-width: 768px) {
-	body {
-
-	  grid-template-columns: 2fr 2fr;
-	  grid-template-rows: 15vmin 80vmin 80vmin 15vmin;
-	  grid-template-areas: 
-	  "hdr hdr"
-      "article1 article2"
-      "article3 article4"
-	    "ftr ftr";
-	}
-} */
-/*   
-  header {
-    grid-area: hdr;
-    background-color: rgb(209, 59, 50);
-  }
-  
-  #article1 {
-    grid-area: article1;
-    background-color: rgb(186 53 46);
-  }
-  
-  #article2 {
-    grid-area: article2;
-    background-color: rgb(197, 55, 47);
+@media only screen and (max-width: 768px) {
+	input {
+    display: block;
   }
 
-  #article3 {
-    grid-area: article3;
-    background-color: rgb( 175, 50, 42);
+  .delete {
+    display: inline;
+    background-color: orangered;
   }
 
-  #article4 {
-    grid-area: article4;
-    background-color: rgb(186 53 46);
+  form {
+    display: inline;
   }
 
-  footer {
-    grid-area: ftr;
-    background-color: rgb(209, 59, 50);
-  } */
-  
+  #add-skill-btn {
+    background-color:  rgb(153, 197, 112);
+    color: white;
+    font-weight: bold;
+  }
+
+  div {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+}
 
 body {
     font-family: 'Courier New', Courier, monospace;
